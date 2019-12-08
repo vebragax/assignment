@@ -16,17 +16,6 @@ before_install:
   - "npm config set spin false"
   - npm i -g now
 
-<<<<<<< HEAD
-=======
-install:
-  - npm install
-  
- env:
-  - DB=postgres
-  - SH=bash
-  - PACKAGE_VERSION="1.0.*"
-
->>>>>>> 396dab28158c42432cbae8c5525ec385561d817d
 deploy:
   provider: script
   script: bash scripts/deploy.sh
